@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at left, #010101, #010101, #010101, #0f012b, #fbb424);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the form */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+/* Form Title */
+h4 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Styling for square checkbox (custom radio button) */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fbb424;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Checked state for the square checkbox */
+input[type="radio"]:checked::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #fbb424;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+/* Radio button labels styling */
+label {
+    font-size: 18px;
+    margin-right: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #fbb424;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #fbb424;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}

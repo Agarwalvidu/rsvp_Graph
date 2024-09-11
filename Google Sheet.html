@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Google Sheet.css">
+</head>
+<body>
+	<div class="container">
+		<form method="post" action="https://script.google.com/macros/s/AKfycbxjN--YkQ_bd6oOieKZaLcsOncXAd1LgaS3OmMSmTekr1aLSrKOcf7AAFE7V1Z92W81/exec" name="RSVP_Details">
+			<h4>RSVP for The Graph Workshop</h4>
+			<input type="email" name="your-email" placeholder="Email" required>
+			
+			<!-- Replace textarea with Yes/No buttons -->
+			<label>
+				<input type="radio" name="response" value="Yes" required> Yes
+			</label>
+			<label>
+				<input type="radio" name="response" value="No" required> No
+			</label>
+			
+			<input type="submit" value="Submit" id="submit">
+		</form>
+	</div>
+
+	<script src="Google Sheet.js"></script>
+</body>
+</html>
